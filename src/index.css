@@ -8,13 +8,16 @@ body {
 .content {
   padding-top: 80px;
 }
-.section {
-  padding-top: 30px;
-  margin-top: 120px;
-}
 
 .section-heading {
   margin-bottom: 60px;
+}
+
+.section-heading h6 {
+  color: #7A918D;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 a {

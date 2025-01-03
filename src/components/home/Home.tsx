@@ -1,66 +1,23 @@
-import {useEffect, useState} from "react";
-import PlaySession from "../../entities/PlaySession";
-import playSessionService from "../../services/PlaySessionService";
-import "./home.css";
+import "./Home.css";
+import AllTime from "../all-time/All-time";
+import ByYear from "../by-year/By-year";
 
 const Home = () => {
-    const logoNote =  require("../../assets/music-note.png");
-    const logoMic =  require("../../assets/microphone.png");
-    const [playSessions, setPlaySessions] = useState([] as PlaySession[]);
-
-    useEffect(() => {
-        async function loadTop5() {
-            playSessionService.getTop5()
-                .then((response) => {
-                    setPlaySessions(response.data.playSessions);
-                });
-        }
-
-        loadTop5();
-
-    }, []);
 
     return(
         <div id="home-page-container"
              className="home-page-container">
-            <p>Welcome!</p>
-            <div className="services" id="services">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6">
-                            <div className="service-item">
-                                <div className="icon">
-                                    <img src={logoNote} alt="all time top 5"/>
-                                </div>
-                                <div className="main-content">
-                                    <h4>Top 5 Songs All Times</h4>
-                                    <ol>
-                                        {
-                                            playSessions.map(ps =>
-                                                <li key={ps.id}>
-                                                    {ps.songTitle} ... <b>{ps.artistName}</b> ... {ps.timesPlayed} times
-                                                </li>
-                                            )
-                                        }
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6">
-                            <div className="service-item">
-                                <div className="icon">
-                                    <img src={logoMic} alt="all time top 5"/>
-                                </div>
-                                <div className="main-content">
-                                    <h4>Top 5 Artists All Times</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    );
-                    }
+            <p> Welcome to Spotistats! </p>
+            <p> Curious about your listening habits on Spotify?
+                Want to know which artists and songs you listen to the most? <br/>
+                Spotistats gives you insight into your music experience.
+                This tool analyses your Spotify data and presents it in a simple overview. <br/>
+                Have fun!
+            </p>
+            <AllTime />
+            <ByYear />
+        </div>
+    );
+}
 
-                    export default Home;
+export default Home;

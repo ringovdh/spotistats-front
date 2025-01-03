@@ -1,4 +1,4 @@
-class PlaySession {
+class TopTrack {
     id: number;
     songTitle: string;
     artistName: string;
@@ -12,4 +12,4 @@ class PlaySession {
     }
 }
 
-export default PlaySession;
+export default TopTrack;

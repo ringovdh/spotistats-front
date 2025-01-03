@@ -1,0 +1,19 @@
+footer {
+    margin-top: 80px;
+    position: relative;
+    background-color: #99C2A2;
+    vertical-align: middle;
+    min-height: 80px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 79px;
+    color: #7A918D;
+    font-weight: 400;
+}
+
+
+
+

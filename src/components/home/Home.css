@@ -13,7 +13,7 @@
     display: inline-block;
     text-align: center;
     line-height: 190px;
-    background-color: #7a6ad8;
+    background-color: #7A918D;
     border-radius: 50%;
     position: absolute;
     right: 0;
@@ -28,7 +28,7 @@
 .services .service-item .main-content {
     border-radius: 25px;
     padding: 80px 30px 50px 30px;
-    background-color: #f1f0fe;
+    background-color: #C5EDAC;
     margin-bottom: 30px;
     margin-right: 80px;
     transition: all .4s;

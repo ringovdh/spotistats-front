@@ -12,11 +12,9 @@ const Header = () => {
                                 <h1>Spotistats</h1>
                             </a>
                             <ul className="nav">
-                                <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
-                                <li className="scroll-to-section"><a href="#services">Services</a></li>
-                                <li className="scroll-to-section"><a href="#courses">Courses</a></li>
-                                <li className="scroll-to-section"><a href="#team">Team</a></li>
-                                <li className="scroll-to-section"><a href="#events">Events</a></li>
+                                <li className="scroll-to-section"><a href="#top">Home</a></li>
+                                <li className="scroll-to-section"><a href="#all_time">All-time</a></li>
+                                <li className="scroll-to-section"><a href="#by_year">By year</a></li>
                             </ul>
                         </nav>
                     </div>
