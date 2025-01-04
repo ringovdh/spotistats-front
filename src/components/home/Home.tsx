@@ -6,7 +6,7 @@ const Home = () => {
 
     return(
         <div id="home-page-container"
-             className="home-page-container">
+             className="page-container">
             <p> Welcome to Spotistats! </p>
             <p> Curious about your listening habits on Spotify?
                 Want to know which artists and songs you listen to the most? <br/>

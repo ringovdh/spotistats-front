@@ -14,7 +14,6 @@ const AllTime = () => {
         async function loadTracksTop5() {
             playSessionService.getTracksTop5()
                 .then((response) => {
-                    console.log('r1', response)
                     setTopTracks(response.data.topTracks);
                 });
         }
@@ -22,11 +21,9 @@ const AllTime = () => {
         async function loadArtistsTop5() {
             playSessionService.getArtistsTop5()
                 .then((response) => {
-                    console.log('r2', response)
                     setTopArtists(response.data.topArtists);
                 });
         }
-
         loadTracksTop5();
         loadArtistsTop5()
 

@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.css';
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -12,9 +13,16 @@ const Header = () => {
                                 <h1>Spotistats</h1>
                             </a>
                             <ul className="nav">
-                                <li className="scroll-to-section"><a href="#top">Home</a></li>
-                                <li className="scroll-to-section"><a href="#all_time">All-time</a></li>
-                                <li className="scroll-to-section"><a href="#by_year">By year</a></li>
+                                <li>
+                                    <NavLink to={"/"} className="scroll-to-section">
+                                        Home
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to={"/load-data"} className="scroll-to-section">
+                                       Load Data
+                                   </NavLink>
+                                </li>
                             </ul>
                         </nav>
                     </div>

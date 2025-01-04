@@ -4,7 +4,7 @@ footer {
     background-color: #99C2A2;
     vertical-align: middle;
     min-height: 80px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 0 0 25px 25px;
 }
 
 footer p {
