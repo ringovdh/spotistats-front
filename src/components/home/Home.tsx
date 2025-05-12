@@ -1,5 +1,5 @@
 import "./Home.css";
-import AllTime from "../all-time/All-time";
+import AllTimeTop5 from "../all-time/All-time-top-5";
 import ByYear from "../by-year/By-year";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
                 This tool analyses your Spotify data and presents it in a simple overview. <br/>
                 Have fun!
             </p>
-            <AllTime />
+            <AllTimeTop5 />
             <ByYear />
         </div>
     );

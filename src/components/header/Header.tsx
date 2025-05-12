@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css';
-import {NavLink} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -9,9 +9,9 @@ const Header = () => {
                 <div className="row">
                     <div className="col-12">
                         <nav className="main-nav">
-                            <a href="index.html" className="logo">
+                            <Link to="/" className="logo">
                                 <h1>Spotistats</h1>
-                            </a>
+                            </Link>
                             <ul className="nav">
                                 <li>
                                     <NavLink to={"/"} className="scroll-to-section">

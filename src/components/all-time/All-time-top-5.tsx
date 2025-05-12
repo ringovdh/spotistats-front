@@ -4,7 +4,7 @@ import TopArtist from "../../entities/TopArtist";
 import playSessionService from "../../services/PlaySessionService";
 import "./All-time.css";
 
-const AllTime = () => {
+const AllTimeTop5 = () => {
     const logoNote = require("../../assets/music-note.png");
     const logoMic = require("../../assets/microphone.png");
     const [topTracks, setTopTracks] = useState([] as TopTrack[]);
@@ -84,4 +84,4 @@ const AllTime = () => {
     );
 }
 
-export default AllTime;
+export default AllTimeTop5;
